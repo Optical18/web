@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="icon" href="https://cdn.discordapp.com/attachments/940352408490500126/947136577220542514/anonico.gif" type="image/gif" >
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    </head>
+<body oncontextmenu="return false">
+    <div class="container">
+        <p class="space"></p>
+        <h1 class="titleh1">H4CK3D BY OPTICAL</h1>
+        <h2 class="titleh2">FUCK PUTIN</h2>
+        <hr width="750px">
+        <p class="img1">
+        <img src="https://cdn.discordapp.com/attachments/940352408490500126/946916487350878208/58430e1ea6515b1e0ad75b56.png" width="350px">
+        </p>
+        <div class="ip" style="color: white;">
+            Your ip:<br><p style="color: red;">! <span id="ip"class="your_ip">Ip will be here</span> !</p>
+        </div>
+        <br>
+
+        <h3 style="text-align: center;"class="your_ip"><a href="discord.gg/3empKpTsy2">Discord</a> | <a href="discord.gg/3empKpTsy2">Twitter</a> | <a href="discord.gg/3empKpTsy2">Telegram</a></h3>
+
+
+        <p class="footer">
+            We are Anonymous, we are legion, we do not forgive, we do not forget. Expect us. 
+        <p>
+    </div>
+</body>
+
+
+
+
+
+
+
+<script type='text/javascript'> /* rotating title */
+    title = "- H4CK3D BY OPTICAL - #FUCKPUTIN ";
+    position = 0;
+    function scrolltitle() {
+        document.title = title.substring(position, title.length) + title.substring(0, position); 
+        position++;
+        if (position > title.length) position = 0;
+        titleScroll = window.setTimeout(scrolltitle,170);
+    }
+    scrolltitle();
+</script>
+<script>/* anti element inspect */
+    document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+  alert("We are Anonymous, we are legion, we do not forgive, we do not forget. Expect us.")
+}
+</script>
+<script> /* getting ip */
+ $.getJSON("https://api.ipify.org?format=json", function(data) {
+      document.getElementById('ip').innerHTML = data.ip;
+ });
+</script>
+<script> /* text effect */
+    const text = baffle(".titleh1");
+      text.set({
+            characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+            speed: 120
+      });
+      text.start();
+      text.reveal(3000);
+</script>
+<script>/* text effect */
+    const text1 = baffle(".titleh2");
+      text1.set({
+            characters : '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░><░▒ ▓/░>',
+            speed: 120
+      });
+      text1.start();
+      text1.reveal(8000);
+</script>
+<script> /* blink the ip */
+var blink_speed = 500;
+var t = setInterval(function (){
+    var ele = document.getElementById('ip');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed)
+</script>
+<style> /* styling */
+    @font-face {
+    font-family: 'HACKED Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HACKED Regular'), url('hack_font.woff') format('woff');
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .container{
+        background: black;
+        height: 100vh;
+    }
+    h1{
+
+        color: white;
+        font-family: 'HACKED Regular';
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        color: white;
+        font-family: 'HACKED Regular';
+        font-size: 40px;
+        text-align: center;
+    }
+    .img1{
+        display: block;
+        text-align: center;
+    }
+    .footer{
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: black;
+        margin-bottom: 10px;
+        color: white;
+        font-family: sans-serif;
+    }
+    .space{
+        height: 25px;
+    }
+    .ip{
+        color: white;
+        font-family: 'HACKED Regular';
+        font-size: 25px;
+        text-align: center;
+
+    }
+    .your_ip{
+        color: red;
+        font-weight: 900;
+    }
+    a{
+        color: white;
+        font-weight: 900;
+        text-decoration: none;
+        font-family: 'HACKED regular';
+    }
+    
+</style>
+</html>
